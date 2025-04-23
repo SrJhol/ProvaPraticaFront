@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prova Pratica Leo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
 </head>
 <body>
     <div class="form-container">
-    <h2>Formulário de cadastro de gastos</h2>
+    <h2>Formulário de Cadastro de Gastos</h2>
     <form id="cadastro">
 
         <div class="input-group">
@@ -18,7 +19,8 @@
 
         <div class="input-group">
             <label for="valor">Valor</label>
-            <input type="number" id="valor" name="valor" required> 
+            <input type="number" step="0.01" min="0" max="100" id="valor" name="valor" riquered>
+            
         </div>
 
         <div class="input-group">
@@ -26,10 +28,10 @@
             <input type="text" id="categoria" name="categoria" required> 
         </div>
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" onclick="exibirTabela()">Cadastrar</button>
     </form>
     ></div>
-    
+    <div id="dados"></div>
 
 </body>
 </html>
