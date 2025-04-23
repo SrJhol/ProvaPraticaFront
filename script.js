@@ -13,11 +13,11 @@ showButton.addEventListener("submit", () => {
   const categoria = catInput.value;
 
   dadosExibidos.innerHTML = `<p>Descrição: ${desc}</p><p>Valor: ${valor}</p><p>Categoria: ${categoria}</p>`;
+
+   let somando =+ valor
 });}
 
-Somar(){
-    let somando =+ valor
-}
+   
 
 document.getElementById("excluirBotao").addEventListener("click", function() {
     document.getElementById("cadastro").reset();
