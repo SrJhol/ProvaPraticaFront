@@ -18,3 +18,7 @@ showButton.addEventListener("submit", () => {
 Somar(){
     let somando =+ valor
 }
+
+document.getElementById("excluirBotao").addEventListener("click", function() {
+    document.getElementById("cadastro").reset();
+  });
