@@ -14,7 +14,7 @@ showButton.addEventListener("submit", () => {
 
   dadosExibidos.innerHTML = `<p>Descrição: ${desc}</p><p>Valor: ${valor}</p><p>Categoria: ${categoria}</p>`;
 
-   let somando =+ valor
+   let somando =+ valorInput
 });}
 
    
@@ -22,3 +22,5 @@ showButton.addEventListener("submit", () => {
 document.getElementById("excluirBotao").addEventListener("click", function() {
     document.getElementById("cadastro").reset();
   });
+
+  
