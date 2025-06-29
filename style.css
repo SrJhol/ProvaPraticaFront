@@ -1,22 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('IMG-20250408-WA0028 (1).jpg');
+    background-color: #aaaaaa;
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .form-container {
-    background-color: #FA8072;
+    background-color: #ffffffcc;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
+    margin-top: 50px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 h2 {
@@ -36,25 +45,77 @@ label {
 
 input {
     width: 100%;
-    height: 30px;
-    padding: 0px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 button {
-    width: 100%;
-    margin-left: 2px !important;
+     width: 100%;
     padding: 10px;
-    background-color: #CD5C5C;
+    margin-top: 10px;
+    background-color: #28a745;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #000000;
+     background-color: #8B0000;
+}
+
+
+/* Área onde os dados cadastrados são exibidos */
+#dados {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cada item exibido */
+#dados div {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#dados p {
+    margin: 4px 0;
+}
+
+/* Botões individuais dentro dos dados */
+#dados button {
+    width: auto;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Botão Editar - Amarelo */
+#dados button:nth-child(4) {
+    background-color: #ffc107;
+}
+#dados button:nth-child(4):hover {
+    background-color: #e0a800;
+}
+
+/* Botão Excluir - Vermelho */
+#dados button:nth-child(5) {
+    background-color: #dc3545;
+}
+#dados button:nth-child(5):hover {
+    background-color: #c82333;
 }
